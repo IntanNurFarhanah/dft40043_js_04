@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <h1>ON LOAD</h1>
+
+    <img src="gambar.jpg" onload="loadImage()" width="100" height="132">
+
+
+
+    <h1>ON SUBMIT</h1>
+
+    <form action="/action_page.php" onsubmit="myFunction()">
+        Enter name: <input type="text" name="fname">
+        <input type="submit" value="Submit">
+
+        <h1>ON CLICK</h1>
+
+        <button type="button" onclick="myClick()">Click me</button>
+        <p id="demo"></p>
+
+        <h1>ON FOCUS</h1>
+
+        Enter your age: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+        <h1>ON BLUR</h1>
+
+        Enter your course: <input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()">
+
+        <h1>SUBMIT </h1>
+
+        <button onclick="myFunction()">Try it</button>
+
+        <p id="submit"></p>
+
+        <h1>PROMPT</h1>
+
+        <button onclick="promptFunction()">Push me
+        </button>
+
+
+
+    </form>
+
+</body>
+
+</html>
